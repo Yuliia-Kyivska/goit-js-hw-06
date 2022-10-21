@@ -1,11 +1,10 @@
-let listId = document.querySelector('#categories');
-let liWithId = listId.querySelectorAll('.item');
-console.log('liWithId');
+const ulWithId = document.querySelector("#categories");
+const liWithUl = ulWithId.querySelectorAll(".item");
+console.log(`Number of categories: ${liWithUl.length}`);
 
-// let items = listWithId.querySelectorAll(".item");
-// for (let item of items) {
-//   let text = item.querySelector('h2').innerHTML;
-//   let count = item.querySelector('li').length;
-
-//   console.log(text);
-// }
+for (let item of liWithUl) {
+  let text = item.querySelector("h2").innerHTML;
+  let count = item.querySelectorAll("li").length;
+  console.log(`Categories: ${text}`);
+  console.log(`Elements: ${count}`);
+}
