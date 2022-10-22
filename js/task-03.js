@@ -12,3 +12,6 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+let ulWithId = document.querySelector(".gallery");
+
