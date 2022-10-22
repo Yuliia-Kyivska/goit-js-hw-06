@@ -1,0 +1,17 @@
+.gallery{
+display: grid;
+grid-template-columns: 15% 25% 15%;
+gap: 15px;
+}
+
+.list-item {
+ display: flex;
+ list-style-type:none;
+ outline: green solid 3px;
+  background-color: rgba(127, 255, 212, 0.132);
+ 
+}
+
+.centerImg{
+  margin: 5px auto;
+}
