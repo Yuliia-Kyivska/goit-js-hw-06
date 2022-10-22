@@ -32,16 +32,16 @@ function handleSubmit(event) {
 
 
 
-// а если elements будет массивом, то сработает вот это:
+
 // function handleSubmit1(event) {
 //   event.preventDefault();
 
-//   var emptyEl = elements.filter(a => a === '');
+//   var emptyEl = Object.values(event.currentTarget.elements).filter(a => a === '');
 
 //   if (emptyEl.length > 0) {
 //    alert ('Please fill in all the fields!');
 // }
 
-//   console.log(`Email: ${email.value}, Password: ${password.value}`);
+//   console.log(`Email: ${event.currentTarget.elements.email.value}, Password: ${event.currentTarget.elements.password.value}`);
 //   event.currentTarget.reset();
 // }
