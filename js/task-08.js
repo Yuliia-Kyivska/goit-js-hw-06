@@ -16,3 +16,32 @@ function handleSubmit(event) {
   console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// а если elements будет массивом, то сработает вот это:
+// function handleSubmit1(event) {
+//   event.preventDefault();
+
+//   var emptyEl = elements.filter(a => a === '');
+
+//   if (emptyEl.length > 0) {
+//    alert ('Please fill in all the fields!');
+// }
+
+//   console.log(`Email: ${email.value}, Password: ${password.value}`);
+//   event.currentTarget.reset();
+// }
