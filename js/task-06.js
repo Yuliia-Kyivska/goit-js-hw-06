@@ -7,7 +7,7 @@ textInput.addEventListener("blur", (event) => {
   let value = input.value;
   let dataLength = input.getAttribute('data-length');
 
-  if (dataLength == value.length) {
+  if (parseInt(dataLength) === value.length) {
     input.classList.remove('invalid');
     input.classList.add('valid');
   } else {

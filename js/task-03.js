@@ -17,10 +17,26 @@ const images = [
 
 let greatGalery = document.querySelector(".gallery");
 
-for (let image of images) {
-  let liHtml = `<li class="list-item"><img src="${image.url}" alt="${image.alt}" width = 200 height = 150 class="centerImg"/></li>`;
-  greatGalery.insertAdjacentHTML("beforeend", liHtml)
-}
+
+const image = images.map(el => {
+  return `<li class="list-item"><img src="${el.url}" alt="${el.alt}" width = 200 height = 150 class="centerImg"/></li>`;
+
+}).join('');
+greatGalery.insertAdjacentHTML("afterbegin", image)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,4 +54,4 @@ for (let image of images) {
 // liCreate.
 // }
 
-// вставляти строку в стріми це гонево
+

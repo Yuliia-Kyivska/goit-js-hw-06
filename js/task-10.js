@@ -10,6 +10,7 @@ function getAmount() {
 }
 
 function createBoxes(amount) {
+  let arr = [];
   let basicSize = 30;
   for (let i = 0; i < amount; i++) {
     let size = basicSize + i * 10;
@@ -17,18 +18,18 @@ function createBoxes(amount) {
 
     let colorValue = getRandomHexColor();
     div.style.cssText = `width: ${size}px; height: ${size}px; background-color: ${colorValue}`;
-    boxes.append(div);
+    arr.push(div);
     
   }
- 
+ boxes.append(...arr);
 }
 
 function destroyBoxes() {
-  // ******1*********
-  boxes.querySelectorAll('div').forEach(el => el.remove());
+ boxes.innerHTML = "";
 
-  // ******2******
-  // boxes.innerHTML = "";
+  // ******2*********
+  // boxes.querySelectorAll('div').forEach(el => el.remove());
+  
 // **********3*************
   // for (var i = boxes.childNodes.length - 1; i >= 0; i--) {
   //   boxes.removeChild(boxes.childNodes[i]);
