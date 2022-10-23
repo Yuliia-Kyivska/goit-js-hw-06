@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 let ulWithId = document.querySelector("#ingredients");
-const arr = [];
+let arr = [];
 for (let ingredient of ingredients) {
   let li = document.createElement('li');
   li.classList.add('item');

@@ -18,7 +18,7 @@ const images = [
 let greatGalery = document.querySelector(".gallery");
 
 
-const image = images.map(el => {
+let image = images.map(el => {
   return `<li class="list-item"><img src="${el.url}" alt="${el.alt}" width = 200 height = 150 class="centerImg"/></li>`;
 
 }).join('');
